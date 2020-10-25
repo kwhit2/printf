@@ -5,19 +5,19 @@
 #include <stddef.h>
 #include <stdarg.h>
 
-typedef struct op
+typedef struct print
 {
 	char *op;
 	int (*f)(va_list);
-} op_t;
+} print_t;
 
 int _putchar(char c);
+int _printf(const char *format, ...);
 int print_char(char a);
 int print_string(char b);
 int print_formatS(char c);
 int print_digit(char d);
 int print_integer(int e);
-void print_all(const char * format, ...);
 
 
 #endif
