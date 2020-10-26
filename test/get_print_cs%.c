@@ -24,35 +24,31 @@ return (1);
 
 int print_string(va_list b)
 {
-unsigned int i = 0;
+int i;
 char *S = va_arg(b, char *);
 
-for (; S[i] != '\0'; i++)
+if (S == NULL)
+S = "(null)";
+
+for (i = 0; S[i] != '\0'; i++)
 {
-_putchar (S[i]);
+_putchar(S[i]);
 }
-return (1);
+return (i);
 }
 
 /**
  *print_integer - print integers
  *
- * @c: va_list e
+ * @c: va_list c
  * Return: int
  */
-int print_integer(va_list cc)
+
+int print_integer(va_list c)
 {
-int count = 0;
-	if (cc < 0)
-    {
-		_putchar('-');
-        cc = -cc;
-    }
-    if (cc / 10)
-    {
-        print_integer(cc / 10);
-        count++;
-    }
-_putchar((cc % 10) + '0');
-return (count);
+while (c)
+{
+break;
+}
+return (0);
 }

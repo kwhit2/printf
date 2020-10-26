@@ -19,7 +19,7 @@ print_t print[] = {
 
 unsigned int i;
 
-for (i = 0; print[i].f != NULL; i++)
+for (i = 0; print[i].prt != NULL; i++)
 {
 if (*(print[i]).prt == *s)
 {
