@@ -16,7 +16,7 @@ int print_char(va_list a);
 int print_string(va_list b);
 
 int _printf(const char *format, ...);
-int (*get_format_func(char *s))(va_list);
+int (*get_format_func(const char *s))(va_list);
 
 
 #endif

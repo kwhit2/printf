@@ -1,10 +1,10 @@
-#include "holberton.h"
+    #include "holberton.h"
 #include <stdarg.h>
 
 /**
  *print_char - print char
  *
- * @a: char a
+ * @a: va_list a
  * Return: int
  */
 
@@ -18,18 +18,18 @@ return (1);
 /**
  *print_string - print strings
  *
- * @b: char a
+ * @b: va_list b
  * Return: int
  */
 
 int print_string(va_list b)
 {
-unsigned int i;
+unsigned int i = 0;
 char *S = va_arg(b, char *);
 
-for (i = 0; S[i]; i++)
+for (; S[i] != '\0'; i++)
 {
 _putchar (S[i]);
 }
-return (i);
+return (1);
 }

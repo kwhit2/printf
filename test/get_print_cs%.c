@@ -1,4 +1,4 @@
-#include "holberton.h"
+    #include "holberton.h"
 #include <stdarg.h>
 
 /**
@@ -24,15 +24,12 @@ return (1);
 
 int print_string(va_list b)
 {
-unsigned int i;
+unsigned int i = 0;
 char *S = va_arg(b, char *);
 
-if (!S)
-S = "(nil)";
-
-for (i = 0; S[i]; i++)
+for (; S[i] != '\0'; i++)
 {
 _putchar (S[i]);
 }
-return (i);
+return (1);
 }
