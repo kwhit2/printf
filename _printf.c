@@ -44,6 +44,8 @@ int _printf(const char *format, ...)
 va_list argptr;
 int (*f)(va_list);
 unsigned int x = 0, count = 0;
+if (format == NULL)
+return (-1);
 va_start(argptr, format);
 while (format[x])
 {
