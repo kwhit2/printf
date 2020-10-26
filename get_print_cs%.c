@@ -28,7 +28,7 @@ unsigned int i = 0;
 char *S = va_arg(b, char *);
 
 if (S == NULL)
-return;
+return ("null");
 
 for (; S[i] != '\0'; i++)
 {
