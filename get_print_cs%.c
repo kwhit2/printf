@@ -24,11 +24,8 @@ return (1);
 
 int print_string(va_list b)
 {
-unsigned int i = 0;
+int i = 0;
 char *S = va_arg(b, char *);
-
-if (S == NULL)
-S = "(null";
 
 for (; S[i]; i++)
 {
