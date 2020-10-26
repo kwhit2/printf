@@ -23,7 +23,7 @@ unsigned int i;
 for (i = 0; print[i].f != NULL; i++)
 {
 if (*(print[i]).prt == s[0])
-return (print[i].f);
+;
 }
-return (NULL);
+return (print[i].f);
 }
