@@ -67,11 +67,6 @@ while (format[x])
         x += 2;
         continue;
         }
-            if (format[x] == '%')
-            {
-            count++;
-            _putchar('%');
-            }
                 if (!format[x + 1])
                 {
                 return (-1);
