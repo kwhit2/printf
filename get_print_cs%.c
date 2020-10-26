@@ -24,10 +24,10 @@ return (1);
 
 int print_string(va_list b)
 {
-int i = 0;
+int i;
 char *S = va_arg(b, char *);
 
-for (; S[i]; i++)
+for (i = 0; S[i]; i++)
 {
 _putchar(S[i]);
 }
