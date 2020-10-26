@@ -27,7 +27,7 @@ int print_string(va_list b)
 unsigned int i = 0;
 char *S = va_arg(b, char *);
 
-for (; S[i] != '\0'; i++)
+for (; S[i]; i++)
 {
 _putchar(S[i]);
 }
