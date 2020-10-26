@@ -83,9 +83,7 @@ while (format[x])
                     x += 2;
                     }
                         else
-                        {
                         x++;
-                        }
 }
 va_end(argptr);
 return (count);

@@ -31,5 +31,5 @@ for (; S[i] != '\0'; i++)
 {
 _putchar (S[i]);
 }
-return (1);
+return (i);
 }
