@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 
 va_list arg;
 
-unsigned int x = 0;
+unsigned int x = 0, num = 0;
 char *str;
 while (format)
 {
@@ -40,7 +40,6 @@ break;
 x++;
 }
 va_end(arg);
-break;
+return (num);
 }
-return (0);
 }
