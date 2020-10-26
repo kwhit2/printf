@@ -27,8 +27,8 @@ int print_string(va_list b)
 unsigned int i = 0;
 char *S = va_arg(b, char *);
 
-if (S == NULL)
-return ("null");
+if (*S == NULL)
+return (-1);
 
 for (; S[i] != '\0'; i++)
 {
