@@ -33,3 +33,26 @@ _putchar (S[i]);
 }
 return (1);
 }
+
+/**
+ *print_integer - print integers
+ *
+ * @c: va_list e
+ * Return: int
+ */
+int print_integer(va_list cc)
+{
+int count = 0;
+	if (cc < 0)
+    {
+		_putchar('-');
+        cc = -cc;
+    }
+    if (cc / 10)
+    {
+        print_integer(cc / 10);
+        count++;
+    }
+_putchar((cc % 10) + '0');
+return (count);
+}

@@ -9,11 +9,12 @@
  *Return: returns void
  */
 
-int (*get_format_func(const char *s))(va_list)
+static int (*get_format_func(const char *s))(va_list)
 {
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
+{"i", print_integer},
 {NULL, NULL}
 };
 
