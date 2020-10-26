@@ -4,7 +4,7 @@
 /**
  *print_char - print char
  *
- * @a: char a
+ * @a: va_list a
  * Return: int
  */
 
@@ -18,7 +18,7 @@ return (1);
 /**
  *print_string - print strings
  *
- * @b: char a
+ * @b: va_list b
  * Return: int
  */
 
@@ -26,6 +26,9 @@ int print_string(va_list b)
 {
 unsigned int i;
 char *S = va_arg(b, char *);
+
+if (!S)
+S = "(nil)";
 
 for (i = 0; S[i]; i++)
 {
