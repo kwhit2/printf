@@ -29,7 +29,7 @@ char *S = va_arg(b, char *);
 
 for (; S[i] != '\0'; i++)
 {
-_putchar (S[i]);
+_putchar(S[i]);
 }
 return (i);
 }
