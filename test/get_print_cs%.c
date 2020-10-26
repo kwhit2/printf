@@ -36,19 +36,3 @@ _putchar(S[i]);
 }
 return (i);
 }
-
-/**
- *print_integer - print integers
- *
- * @c: va_list c
- * Return: int
- */
-
-int print_integer(va_list c)
-{
-while (c)
-{
-break;
-}
-return (0);
-}

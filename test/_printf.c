@@ -14,7 +14,6 @@ int (*get_format_func(const char *s))(va_list)
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
-{"i", print_integer},
 {NULL, NULL}
 };
 
@@ -45,6 +44,8 @@ int _printf(const char *format, ...)
 va_list argptr;
 int (*f)(va_list);
 unsigned int x = 0, count = 0;
+if (format == NULL)
+return (-1);
 va_start(argptr, format);
 while (format[x])
 {
@@ -62,21 +63,12 @@ count += f(argptr);
 x += 2;
 continue;
 }
-if (format[x] == '%')
-{
-count++;
-_putchar('%');
-}
 if (!format[x + 1])
-{
 return (-1);
 _putchar(format[x]);
 count++;
-}
 if (format[x + 1] == '%')
-{
 x += 2;
-}
 else
 x++;
 }
