@@ -104,9 +104,7 @@ return (count);
 
 int print_unknown(va_list arg)
 {
-int x = va_arg(arg, char *);
-
+char x = va_arg(arg, int);
 _putchar(x);
-
 return (1);
 }
