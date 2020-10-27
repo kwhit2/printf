@@ -36,37 +36,3 @@ _putchar(S[i]);
 }
 return (i);
 }
-
-/**
- *recur_len - recursive len
- *
- * @s: int s
- * Return: int
- */
-
-int recur_len(int s)
-{
-int i, len;
-if (s == 0)
-return (0);
-i = s % 10;
-len = 1 + r_len(s / 10);
-_putchar(i + '0');
-return (len);
-}
-/**
- *print_integer - print integer
- *
- * @n: va_list n
- * Return: int
- */
-
-int print_integer(va_list n)
-{
-int sum = 0;
-int x = va_arg(n, int);
-
-sum = r_len(x);
-
-return (sum);
-}
