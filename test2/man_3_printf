@@ -15,9 +15,8 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 .SH OPTIONS
 .B _printf
 
-.SH SEE ALSO
-
 .SH BUGS
 No known bugs.
-.SH AUTHOR
+
+.SH AUTHORS
 Sang Nguyen and Kyle Whitten
