@@ -106,9 +106,7 @@ int print_unknown(va_list arg)
 {
 int x = va_arg(arg, char *);
 
-if (x == 'r')
-{
-_putchar('r');
-}
-return (x);
+_putchar(x);
+
+return (1);
 }
