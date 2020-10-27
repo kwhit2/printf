@@ -42,18 +42,19 @@ return (i);
  * Return: int
  */
 
-int print_i(va_list i)
+int print_integer(va_list n)
 {
-unsigned int x = 0;
-char *S = va_arg(i, char *);
-
-for (x = 0; S[x] != '\0'; x++)
-
-    if (S[x] < 0)
-    {
-    putchar('-');
-    x = -x;
-    }
-putchar((S[x] % 10) + '0');
-return (x);
+int count = 0;
+int x = va_arg(n, char *);
+if (x < 0)
+{
+putchar('-');
+x = -x;
+}
+if (x / 10)
+{
+print_integer(x / 10);
+count++;
+}
+putchar((x % 10) + '0');
 }

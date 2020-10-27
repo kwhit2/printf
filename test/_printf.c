@@ -15,7 +15,7 @@ unsigned int i;
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
-{"i", print_i},
+{"i", print_integer},
 {NULL, NULL}
 };
 for (i = 0; print[i].prt != NULL; i++)
