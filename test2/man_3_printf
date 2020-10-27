@@ -19,5 +19,5 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 No known bugs.
 
 .SH AUTHORS
-\fBSang Nguyen\fR
+\fBSang Nguyen\fR,
 \fBKyle Whitten\fR
