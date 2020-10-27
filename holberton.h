@@ -5,6 +5,13 @@
 #include <stddef.h>
 #include <stdarg.h>
 
+/**
+ * struct print - c, s, i, d.
+ * @prt: *ptr point
+ * @f: pointer to va_list
+ *
+ * Description: va_list struct
+ */
 typedef struct print
 {
 char *prt;
@@ -15,6 +22,7 @@ int _putchar(char c);
 int print_char(va_list a);
 int print_string(va_list b);
 int print_integer(va_list n);
+int recur_len(int s);
 
 int _printf(const char *format, ...);
 

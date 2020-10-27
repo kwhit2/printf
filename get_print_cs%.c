@@ -38,9 +38,9 @@ return (i);
 }
 
 /**
- *r_lens - recursive len
+ *recur_len - recursive len
  *
- * @n: int n
+ * @s: int s
  * Return: int
  */
 
