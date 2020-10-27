@@ -8,7 +8,10 @@
 \fBint _printf(const char *\fR\fIformat\fR\fB, ...);\fR
 
 .SH DESCRIPTION
-Produces output according to format recieved. 
+The function \fB_printf\fR writes output to standard output. An argument is
+received from \fIformat\fR that is a character string which outputs based on
+the arguments it receives after \fIformat\fR. All of the following arguments
+should address a conversion specifier, addressed with the prefix \fI%\fR.
 .SH OPTIONS
 .B _printf
 
