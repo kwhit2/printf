@@ -63,22 +63,35 @@ return (len);
 int print_integer(va_list v)
 {
 int count = 0;
-unsigned int b;
+int b;
+char a, c;
 int x = va_arg(v, char *);
 
 if (x < 0)
 {
 _putchar('-');
-b = -x;
+a = ('0' - (x % 10));
+x /= -10;
 }
 else
 {
-b = x;
+a = ((x % 10) + '0');
+x /= 10;
+count = a;
 }
-if (b / 10)
+b = 0;
+while (x > 0)
 {
-count = r_len(b);
+b = b * 10 + (x % 10);
+x /= 10;
 }
-_putchar(count % 10);
+while (b > 0)
+{
+c = ((b % 10) + '0');
+_putchar(c);
+b /= 10;
+count = c;
+}
+_putchar(a);
 return (count);
 }
