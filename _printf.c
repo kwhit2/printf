@@ -14,6 +14,8 @@ int (*get_format_func(const char *s))(va_list)
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
+{"i", print_integer},
+{"d", print_integer},
 {NULL, NULL}
 };
 

@@ -60,10 +60,18 @@ return (len);
 
 int print_integer(va_list v)
 {
-int sum = 0;
-int x = va_arg(v, int);
+int count = 0;
+int x = va_arg(v, char *);
 
-sum = r_len(x);
-
-return (sum);
+if (x < 0)
+{
+_putchar('-');
+x = -x;
+}
+if (x / 10)
+{
+count = r_len(x);
+}
+_putchar(count % 10);
+return (count);
 }
