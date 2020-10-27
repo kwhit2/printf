@@ -70,6 +70,7 @@ int x = va_arg(v, char *);
 if (x < 0)
 {
 _putchar('-');
+count++;
 a = ('0' - (x % 10));
 x /= -10;
 }
@@ -77,7 +78,6 @@ else
 {
 a = ((x % 10) + '0');
 x /= 10;
-count = a;
 }
 b = 0;
 while (x > 0)
@@ -89,9 +89,10 @@ while (b > 0)
 {
 c = ((b % 10) + '0');
 _putchar(c);
+count++;
 b /= 10;
-count = c;
 }
 _putchar(a);
+count++;
 return (count);
 }
