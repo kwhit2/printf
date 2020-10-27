@@ -16,6 +16,7 @@ print_t print[] = {
 {"c", print_char},
 {"s", print_string},
 {"i", print_integer},
+{"d", print_integer},
 {NULL, NULL}
 };
 for (i = 0; print[i].prt != NULL; i++)

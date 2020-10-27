@@ -36,3 +36,27 @@ _putchar(S[i]);
 }
 return (i);
 }
+
+/**
+ *print_integer - print integer
+ *
+ * @n: va_list n
+ * Return: int
+ */
+
+int print_integer(va_list n)
+{
+int count = 0;
+if (n < 0)
+{
+putchar('-');
+n = -n;
+}
+if (n / 10)
+{
+print_integer(n / 10);
+count++;
+}
+putchar((n % 10) + '0');
+return (count);
+}

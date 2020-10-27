@@ -14,9 +14,9 @@ int (*f)(va_list);
 int _putchar(char c);
 int print_char(va_list a);
 int print_string(va_list b);
+int print_integer(va_list n);
 
 int _printf(const char *format, ...);
-int (*get_format_func(const char *s))(va_list);
 
 
 #endif
