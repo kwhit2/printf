@@ -38,22 +38,6 @@ return (i);
 }
 
 /**
- *r_len - length
- *
- * @n: int n
- * Return: int
- */
-int r_len(int n)
-{
-int i, len;
-if (n == 0)
-return (0);
-i = n % 10;
-len = 1 + r_len(n / 10);
-_putchar(i + '0');
-return (len);
-}
-/**
  *print_integer - print integer
  *
  * @v: va_list v
