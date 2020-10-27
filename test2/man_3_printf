@@ -1,4 +1,4 @@
-.TH _printf "25 October 2020" "0.44" "_printf man page"
+.TH _printf "25 October 2020" "0.24" "_printf man page"
 .SH NAME
 .B _printf() 
 - Prints anything to stand output.
