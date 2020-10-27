@@ -38,6 +38,23 @@ return (i);
 }
 
 /**
+ *r_lens - recursive len
+ *
+ * @n: int n
+ * Return: int
+ */
+
+int recur_len(int s)
+{
+int i, len;
+if (s == 0)
+return (0);
+i = s % 10;
+len = 1 + r_len(s / 10);
+_putchar(i + '0');
+return (len);
+}
+/**
  *print_integer - print integer
  *
  * @n: va_list n
@@ -46,17 +63,10 @@ return (i);
 
 int print_integer(va_list n)
 {
-int count = 0;
-if (n < 0)
-{
-putchar('-');
-n = -n;
-}
-if (n / 10)
-{
-print_integer(n / 10);
-count++;
-}
-putchar((n % 10) + '0');
-return (count);
+int sum = 0;
+int x = va_arg(n, int);
+
+sum = r_len(x);
+
+return (sum);
 }

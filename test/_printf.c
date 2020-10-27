@@ -44,31 +44,41 @@ int _printf(const char *format, ...)
 va_list argptr;
 int (*f)(va_list);
 unsigned int x = 0, count = 0;
+
 if (format == NULL)
 return (-1);
+
 va_start(argptr, format);
+
 while (format[x])
 {
-for (; format[x] != '%' && format[x]; x++)
-{
-_putchar(format[x]);
-count++;
-}
+    for (; format[x] != '%' && format[x]; x++)
+    {
+    _putchar(format[x]);
+    count++;
+    }
+
 if (!format[x])
 return (count);
+
 f = get_format_func(&format[x + 1]);
-if (f != NULL)
-{
-count += f(argptr);
-x += 2;
-continue;
-}
+
+    if (f != NULL)
+    {
+    count += f(argptr);
+    x += 2;
+    continue;
+    }
+
 if (!format[x + 1])
 return (-1);
+
 _putchar(format[x]);
 count++;
+
 if (format[x + 1] == '%')
 x += 2;
+
 else
 x++;
 }

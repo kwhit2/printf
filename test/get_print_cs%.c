@@ -36,26 +36,34 @@ return (i);
 }
 
 /**
+ *r_lens - print integer
+ *
+ * @n: va_list d
+ * Return: int
+ */
+int r_len(int n)
+{
+int i, len;
+if (n == 0)
+return (0);
+i = n % 10;
+len = 1 + r_len(n / 10);
+_putchar(i + '0');
+return (len);
+}
+/**
  *print_ints - print integer
  *
  * @d: va_list d
  * Return: int
  */
 
-int print_integer(va_list n)
+int print_integer(va_list v)
 {
-int count = 0;
-int x = va_arg(n, char *);
-if (x < 0)
-{
-putchar('-');
-x = -x;
-}
-if (x / 10)
-{
-print_integer(x / 10);
-count++;
-}
-putchar((x % 10) + '0');
-return (count);
+int sum = 0;
+int x = va_arg(v, int);
+
+sum = r_len(x);
+
+return (sum);
 }
