@@ -1,6 +1,6 @@
-.TH man _printf "25 October 2020" "0.44" "_printf man page"
+.TH _printf "25 October 2020" "0.44" "_printf man page"
 .SH NAME
-.B _printf
+.B _printf() 
 - Prints anything to stand output.
 .SH SYNOPSIS
 #define _PRINTF_FUNCTION
