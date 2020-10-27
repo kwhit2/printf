@@ -15,6 +15,10 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 .SH OPTIONS
 .B _printf
 
+.SS
+.B Return Value
+The return value for \fB_printf()\fR is the length of the output recieved from \fI??\fR.
+
 .SH CODE CONFORMS TO
 The
 .B Betty Standard
