@@ -15,6 +15,10 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 .SH OPTIONS
 .B _printf
 
+.SH CODE COMFORMS TO
+The
+.B Betty Standard
+
 .SH BUGS
 No known bugs.
 
