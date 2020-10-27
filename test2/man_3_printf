@@ -1,0 +1,28 @@
+.TH man _printf "25 October 2020" "0.44" "_printf man page"
+.SH NAME
+.B _printf
+- Prints anything to stand output.
+.SH SYNOPSIS
+#define _PRINTF_FUNCTION
+#include <stdlib.h>
+#include <stdio.h>
+#include <stddef.h>
+#include <stdarg.h>
+
+int _putchar(char c);
+int print_char(va_list a);
+int print_string(va_list b);
+
+int _printf(const char *format, ...);
+int (*get_format_func(char *s))(va_list);
+.SH DESCRIPTION
+Produces output according to format recieved. 
+.SH OPTIONS
+.B _printf
+
+.SH SEE ALSO
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Sang Nguyen and Kyle Whitten
