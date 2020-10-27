@@ -21,7 +21,7 @@ Files Included:
 \fBi_putchar.c\fR - Writes the character c to stdout.
 
 
-\fBget_print_cs%.c\fR - 
+\fBget_print_cs%.c\fR - Various functions associated with va_list.
 
 
 \fBholberton.h\fR - Header file that also contains our struct.
