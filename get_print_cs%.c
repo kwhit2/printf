@@ -38,7 +38,7 @@ return (i);
 }
 
 /**
- *r_lens - length
+ *r_len - length
  *
  * @n: int n
  * Return: int
