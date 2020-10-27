@@ -7,6 +7,11 @@
 
 \fBint _printf(const char *\fR\fIformat\fR\fB, ...);\fR
 
+\fBint _putchar(char c);\fR
+\fBint print_char(va_list a);\fR
+\fBint print_string(va_list b);\fR
+\fBint print_integer(va_list n);\fR
+
 .SH DESCRIPTION
 The function \fB_printf\fR writes output to standard output. An argument is
 received from \fIformat\fR that is a character string which outputs based on
