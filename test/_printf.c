@@ -17,6 +17,7 @@ print_t print[] = {
 {"s", print_string},
 {"i", print_integer},
 {"d", print_integer},
+{"r", print_unknown},
 {NULL, NULL}
 };
 for (i = 0; print[i].prt != NULL; i++)
@@ -70,8 +71,8 @@ f = get_format_func(&format[x + 1]);
     continue;
     }
 
-if (!format[x + 1])
-return (-1);
+    if (!format[x + 1])
+    return (-1);
 
 _putchar(format[x]);
 count++;

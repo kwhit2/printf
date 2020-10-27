@@ -15,6 +15,7 @@ int _putchar(char c);
 int print_char(va_list a);
 int print_string(va_list b);
 int print_integer(va_list v);
+int print_unknown(va_list arg);
 
 int _printf(const char *format, ...);
 
