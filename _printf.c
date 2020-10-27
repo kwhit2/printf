@@ -56,9 +56,6 @@ for (; format[x] != '%' && format[x]; x++)
 _putchar(format[x]);
 count++;
 }
-if (format[x] == ' ')
-x++;
-continue;
 if (!format[x])
 return (count);
 f = get_format_func(&format[x + 1]);
