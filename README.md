@@ -24,4 +24,4 @@ Files Included:
 \fBget_print_cs%.c\fR - Various functions associated with va_list.
 
 
-\fBholberton.h\fR - Header file that also contains our struct.
+\fBholberton.h\fR - Header file that also contains our struct
