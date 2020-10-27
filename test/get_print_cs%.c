@@ -45,16 +45,17 @@ return (i);
 int print_integer(va_list n)
 {
 int count = 0;
-if (n < 0)
+int x = va_arg(n, char *);
+if (x < 0)
 {
 putchar('-');
-n = -n;
+x = -x;
 }
-if (n / 10)
+if (x / 10)
 {
-print_integer(n / 10);
+print_integer(x / 10);
 count++;
 }
-putchar((n % 10) + '0');
+putchar((x % 10) + '0');
 return (count);
 }

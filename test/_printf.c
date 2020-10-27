@@ -9,7 +9,7 @@
  *Return: returns int
  */
 
-static int (*get_format_func(const char *s))(va_list)
+int (*get_format_func(const char *s))(va_list)
 {
 unsigned int i;
 print_t print[] = {
