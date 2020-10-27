@@ -63,16 +63,21 @@ return (len);
 int print_integer(va_list v)
 {
 int count = 0;
+unsigned int b;
 int x = va_arg(v, char *);
 
 if (x < 0)
 {
 _putchar('-');
-x = -x;
+b = -x;
 }
-if (x / 10)
+else
 {
-count = r_len(x);
+b = x;
+}
+if (b / 10)
+{
+count = r_len(b);
 }
 _putchar(count % 10);
 return (count);
