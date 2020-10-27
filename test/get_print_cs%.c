@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdarg.h>
-
 /**
  *print_char - print char
  *
@@ -38,27 +36,24 @@ return (i);
 }
 
 /**
- *print_integer - print integer
+ *print_ints - print integer
  *
- * @n: va_list n
+ * @d: va_list d
  * Return: int
  */
 
-int print_integer(va_list n)
+int print_i(va_list i)
 {
-int ct = 0;
-char ints = (char)va_arg(n, int);
+unsigned int x = 0;
+char *S = va_arg(i, char *);
 
-if (ints < 0)
-{
-_putchar('-');
-ints = -ints;
-}
-if (ints / 10)
-{
-print_integer(ints / 10);
-ct++;
-}
-_putchar((ints % 10) + '0');
-return (ct);
+for (x = 0; S[x] != '\0'; x++)
+
+    if (S[x] < 0)
+    {
+    putchar('-');
+    x = -x;
+    }
+putchar((S[x] % 10) + '0');
+return (x);
 }

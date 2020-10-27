@@ -9,17 +9,15 @@
  *Return: returns int
  */
 
-int (*get_format_func(const char *s))(va_list)
+static int (*get_format_func(const char *s))(va_list)
 {
 unsigned int i;
-
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
-{"i", print_integer},
+{"i", print_i},
 {NULL, NULL}
 };
-
 for (i = 0; print[i].prt != NULL; i++)
 {
 if (*(print[i]).prt == *s)
