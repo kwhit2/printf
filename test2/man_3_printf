@@ -5,12 +5,8 @@
 .SH SYNOPSIS
 .B #include "holberton.h"
 
-int _putchar(char c);
-int print_char(va_list a);
-int print_string(va_list b);
+\fBint _printf(const char *\fR\fIformat\fR\fB, ...);\fR
 
-int _printf(const char *format, ...);
-int (*get_format_func(char *s))(va_list);
 .SH DESCRIPTION
 Produces output according to format recieved. 
 .SH OPTIONS
