@@ -15,7 +15,7 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 .SH OPTIONS
 .B _printf
 
-.SH CODE COMFORMS TO
+.SH CODE CONFORMS TO
 The
 .B Betty Standard
 
