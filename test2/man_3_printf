@@ -17,7 +17,23 @@ should address a conversion specifier, addressed with the prefix \fI%\fR.
 
 .SS
 .B Return Value
-The return value for \fB_printf()\fR is the length of the output recieved from \fI??\fR.
+The return value for \fB_printf()\fR is the length of the output recieved
+from \fI??\fR.
+
+.SS
+.B Conversion Specifiers
+These are indicated by the characters following the \fI%\fR which will indicate
+the kind of conversion that is taking place. Actions and descriptions follows:
+
+.B d, i
+Both d & i correspond to and \fIint\fR argument.
+
+.B s
+The \fIconst char *\fR specifier converts the argument to a character string.
+
+.B c
+This is an \fIint\fR specifier that converts argument(s) to an \fIunsigned
+char\fR to be printed alone.
 
 .SH CODE CONFORMS TO
 The
