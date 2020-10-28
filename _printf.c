@@ -64,11 +64,6 @@ count += f(argptr);
 x += 2;
 continue;
 }
-if (format[x] == '%')
-{
-_putchar('%');
-count++;
-}
 if (!format[x + 1])
 return (-1);
 _putchar(format[x]);
