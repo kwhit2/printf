@@ -6,6 +6,7 @@ received from format that is a character string which outputs based on
 the arguments it receives after format. All of the following arguments
 should address a conversion specifier, addressed with the prefix %.
 
+
 int _putchar(char c);
 
 
