@@ -67,7 +67,7 @@ continue;
 if (format[x] == '%')
 {
 _putchar('%');
-x++;
+count++;
 }
 if (!format[x + 1])
 return (-1);
