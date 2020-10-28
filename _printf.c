@@ -70,8 +70,11 @@ return (-1);
 _putchar(format[x]);
 count++;
 if (format[x + 1] == '%' && format[x] == '%')
-x ++;
-
+{
+_putchar('%');
+x++;
+count++;
+}
 else
 x++;
 }
