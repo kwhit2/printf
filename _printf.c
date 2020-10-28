@@ -11,6 +11,7 @@
 
 int (*get_format_func(const char *s))(va_list)
 {
+unsigned int i;
 print_t print[] = {
 {"c", print_char},
 {"s", print_string},
@@ -18,8 +19,6 @@ print_t print[] = {
 {"d", print_integer},
 {NULL, NULL}
 };
-
-unsigned int i;
 
 for (i = 0; print[i].prt != NULL; i++)
 {
