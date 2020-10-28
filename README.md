@@ -6,11 +6,40 @@ received from format that is a character string which outputs based on
 the arguments it receives after format. All of the following arguments
 should address a conversion specifier, addressed with the prefix %.
 
-int print_char(va_list a) - 
+int _putchar(char c);
 
-int print_string(va_list b) - 
 
-int print_integer(va_list n) - 
+int print_char(va_list a);
+
+
+int print_string(va_list b);
+
+
+int print_integer(va_list v);
+
+
+Return Value
+The return value for _printf() is the length of the output recieved
+from.
+
+
+Conversion Specifiers
+These are indicated by the characters following the % which will indicate
+the kind of conversion that is taking place. Actions and descriptions follows:
+
+
+d, i
+Both d & i correspond to and int argument.
+
+
+s
+The const char * specifier converts the argument to a character string.
+
+
+c
+This is an int specifier that converts argument(s) to an unsigned
+char to be printed alone.
+
 
 Files Included:
 
