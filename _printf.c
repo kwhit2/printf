@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- *get_format_func - function that selects function
+ *get_format_func - function that selects the appropriate specifier
  *@s: *s const char pointer
  *
- *Description: function that selects function
+ *Description: function that selects the appropriate specifier
  *section header: Section description
- *Return: returns int
+ *Return: format
  */
 
 int (*get_format_func(const char *s))(va_list)
