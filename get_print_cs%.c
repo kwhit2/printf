@@ -2,10 +2,10 @@
 #include <stdarg.h>
 
 /**
- *print_char - print char
+ *print_char - print character
  *
- * @a: va_list a
- * Return: int
+ * @a: va_list arg a
+ * Return: count
  */
 
 int print_char(va_list a)
@@ -18,8 +18,8 @@ return (1);
 /**
  *print_string - print strings
  *
- * @b: va_list b
- * Return: int
+ * @b: va_list arg b
+ * Return: number of characters
  */
 
 int print_string(va_list b)
