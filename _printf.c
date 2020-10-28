@@ -69,7 +69,7 @@ if (!format[x + 1])
 return (-1);
 _putchar(format[x]);
 count++;
-if (format[x + 1] == '%')
+if (format[x + 1] == '%' && format[x] == '%')
 x += 2;
 else
 x++;
