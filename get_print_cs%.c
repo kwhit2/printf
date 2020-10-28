@@ -78,7 +78,7 @@ b /= 10;
 }
 for(; z!= 0; z--)
 _putchar('0');
-if (b % 10 == 0)
+if (x % 10 == 0)
 z++;
 
 _putchar(a);
