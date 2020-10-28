@@ -70,7 +70,7 @@ return (-1);
 _putchar(format[x]);
 count++;
 if (format[x + 1] == '%')
-x++;
+x += 2;
 else
 x++;
 }
