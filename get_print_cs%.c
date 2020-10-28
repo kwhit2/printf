@@ -46,7 +46,7 @@ return (i);
 
 int print_integer(va_list v)
 {
-int count = 0, z = 0;
+int count = 0;
 int b;
 char a, c;
 int x = va_arg(v, char *);
@@ -66,8 +66,6 @@ x /= 10;
 b = 0;
 while (x > 0)
 {
-if (x % 10 == 0)
-z++;
 b = b * 10 + (x % 10);
 x /= 10;
 }
@@ -78,8 +76,6 @@ _putchar(c);
 count++;
 b /= 10;
 }
-for (; z != 0; z--)
-_putchar('0');
 _putchar(a);
 count++;
 return (count);
