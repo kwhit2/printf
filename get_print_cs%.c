@@ -38,10 +38,10 @@ return (i);
 }
 
 /**
- *print_integer - print integer
+ *print_integer - print integers
  *
- * @v: va_list v
- * Return: int
+ * @v: va_list arg v
+ * Return: count
  */
 
 int print_integer(va_list v)
